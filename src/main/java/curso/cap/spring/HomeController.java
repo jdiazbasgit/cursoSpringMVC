@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -34,9 +35,12 @@ public class HomeController {
 	}
 
 	//@RequestMapping(value = "verTexto", method = RequestMethod.POST)
+	
 	public HomeController() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	@PostMapping("verTexto")
 	public String verTexto(@RequestParam String texto, Model model) {
 
 		model.addAttribute("textoDevuelto",
