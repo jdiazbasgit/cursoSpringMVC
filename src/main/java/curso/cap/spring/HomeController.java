@@ -18,7 +18,6 @@ import org.springframework.web.servlet.ModelAndView;
 import curso.cap.spring.beans.Login;
 
 @Controller
-@RequestMapping("/api")
 public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
