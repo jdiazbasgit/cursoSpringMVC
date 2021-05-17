@@ -8,7 +8,7 @@
 <body>
 	<spring:form action="verLogin" modelAttribute="login">
 
-USUARIO:<spring:input path="usuario" readonly="true" />
+USUARIO:<spring:input path="usuario"  />
 		<br>
 
 CLAVE:<spring:password path="clave" />
